@@ -1,8 +1,8 @@
 window.onload=function()
 {
-    var canvasWidth=900;
-    var canvasHeight=600;
-    var blockSize=30;
+    var canvasWidth=800;
+    var canvasHeight=500;
+    var blockSize=20;
     var ctx;
     var delay = 100;
     var xCoord = 0;
