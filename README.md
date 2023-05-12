@@ -6,7 +6,7 @@ Ce jeu Snake est une version du célèbre jeu classique, développé en JavaScri
 
 ## Comment jouer
 
-*Utilisez les touches directionnelles pour guider le serpent.
+*Utilisez les touches directionnelles pour guider le serpent.<\n>
 *Le serpent avance continuellement, donc faites attention à ne pas le faire sortir de l'écran ou le faire entrer en collision avec un mur ou un obstacle.
 *Collectez les pommes pour augmenter la taille du serpent et marquer des points.
 *Le jeu se termine si le serpent entre en collision avec un mur ou un obstacle.
