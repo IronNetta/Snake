@@ -1,4 +1,5 @@
 #Jeu Snake en JavaScript
+
 Ce jeu Snake est une version du célèbre jeu classique, développé en JavaScript. Le but du jeu est de guider le serpent pour qu'il mange des pommes et grandisse en taille, tout en évitant les murs et les obstacles.
 
 <img src="https://jeu-du-serpent.fr/wp-content/uploads/2021/11/jeu-snake.jpg"/>
