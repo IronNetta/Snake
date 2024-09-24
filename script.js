@@ -4,7 +4,7 @@ window.onload=function()
     var canvasHeight=500;
     var blockSize=20;
     var ctx;
-    var delay = 100;
+    var delay = 200;
     var xCoord = 0;
     var yCoord = 0;
     var snakee;
