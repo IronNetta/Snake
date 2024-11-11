@@ -1,3 +1,12 @@
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Initializes and starts the Snake game when the window is loaded.
+ * Sets up the game canvas, initializes game objects, and begins 
+ * the game loop. Handles keypress events to control the snake's 
+ * direction and restart the game. Displays high scores and manages 
+ * game state transitions such as game over.
+ */
+/******  0b764c6b-3cb3-4147-8aa6-1b143b0c7074  *******/
 window.onload = function() {
     var canvasWidth = window.innerWidth > 900 ? 900 : window.innerWidth * 0.9;
     var canvasHeight = window.innerHeight > 700 ? 700 : window.innerHeight * 0.7;
@@ -13,6 +22,13 @@ window.onload = function() {
 
     init();
 
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Initializes the game environment by setting up the canvas 
+ * and its properties, creating the snake and apple objects, 
+ * and starting the game loop. Displays high scores on the screen.
+ */
+/******  1bb4feee-1f47-4e97-a9a8-58992e417869  *******/
     function init() {
         var canvas = document.createElement('canvas');
         canvas.width = canvasWidth;
@@ -79,6 +95,11 @@ window.onload = function() {
         let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
         let scoreBoard = document.createElement('div');
         scoreBoard.innerHTML = '<h2>High Scores</h2>' + highScores.join('<br>');
+        scoreBoard.style.position = 'absolute';  // Test pour le rendre visible
+        scoreBoard.style.top = '10px';
+        scoreBoard.style.left = '10px';
+        scoreBoard.style.backgroundColor = '#fff';
+        scoreBoard.style.padding = '10px';
         document.body.appendChild(scoreBoard);
     }
 
