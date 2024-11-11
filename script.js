@@ -23,6 +23,9 @@ window.onload = function() {
         canvas.style.backgroundColor = "#ddd";
         document.body.appendChild(canvas);
         ctx = canvas.getContext('2d');
+    
+        displayHighScores();
+    
         snakee = new Snake([[6, 4], [5, 4], [4, 4]], "right");
         applee = new Apple([10, 10]);
         score = 0;
@@ -66,6 +69,17 @@ window.onload = function() {
         ctx.strokeText("Appuyer sur la touche espace pour rejouer", centreX, centreY - 120);
         ctx.fillText("Appuyer sur la touche espace pour rejouer", centreX, centreY - 120);
         ctx.restore();
+
+        let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+        highScores.push(score);
+        localStorage.setItem('highScores', JSON.stringify(highScores));
+    }
+
+    function displayHighScores() {
+        let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+        let scoreBoard = document.createElement('div');
+        scoreBoard.innerHTML = '<h2>High Scores</h2>' + highScores.join('<br>');
+        document.body.appendChild(scoreBoard);
     }
 
     function restart() {
