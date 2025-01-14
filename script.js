@@ -25,7 +25,7 @@ window.onload = function() {
         ctx = canvas.getContext('2d');
     
         displayHighScores();
-    
+        
         snakee = new Snake([[6, 4], [5, 4], [4, 4]], "right");
         applee = new Apple([10, 10]);
         score = 0;
@@ -73,6 +73,7 @@ window.onload = function() {
         let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
         highScores.push(score);
         localStorage.setItem('highScores', JSON.stringify(highScores));
+        displayHighScores();
     }
 
     function displayHighScores() {
