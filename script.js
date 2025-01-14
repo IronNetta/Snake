@@ -1,12 +1,4 @@
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * Initializes and starts the Snake game when the window is loaded.
- * Sets up the game canvas, initializes game objects, and begins 
- * the game loop. Handles keypress events to control the snake's 
- * direction and restart the game. Displays high scores and manages 
- * game state transitions such as game over.
- */
-/******  0b764c6b-3cb3-4147-8aa6-1b143b0c7074  *******/
+
 window.onload = function() {
     var canvasWidth = window.innerWidth > 900 ? 900 : window.innerWidth * 0.9;
     var canvasHeight = window.innerHeight > 700 ? 700 : window.innerHeight * 0.7;
@@ -21,14 +13,6 @@ window.onload = function() {
     var timeout;
 
     init();
-
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * Initializes the game environment by setting up the canvas 
- * and its properties, creating the snake and apple objects, 
- * and starting the game loop. Displays high scores on the screen.
- */
-/******  1bb4feee-1f47-4e97-a9a8-58992e417869  *******/
     function init() {
         var canvas = document.createElement('canvas');
         canvas.width = canvasWidth;
