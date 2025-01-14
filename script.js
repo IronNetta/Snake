@@ -25,7 +25,7 @@ window.onload = function() {
         ctx = canvas.getContext('2d');
     
         displayHighScores();
-        
+
         snakee = new Snake([[6, 4], [5, 4], [4, 4]], "right");
         applee = new Apple([10, 10]);
         score = 0;
@@ -213,12 +213,12 @@ window.onload = function() {
 
     document.addEventListener("keydown", function handleKeyDown(e) {
         var newDirection;
-        switch (e.keyCode) {
-            case 37: newDirection = "left"; break;
-            case 38: newDirection = "up"; break;
-            case 39: newDirection = "right"; break;
-            case 40: newDirection = "down"; break;
-            case 32: restart(); return;
+        switch (e.key) {
+            case "ArrowLeft": newDirection = "left"; break;
+            case "ArrowUp": newDirection = "up"; break;
+            case "ArrowRight": newDirection = "right"; break;
+            case "ArrowDown": newDirection = "down"; break;
+            case " ": restart(); return;
             default: return;
         }
         snakee.setDirection(newDirection);
